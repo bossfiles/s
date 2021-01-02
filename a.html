@@ -1,0 +1,19 @@
+<script type="text/javascript">
+    $(document).ready(function(){
+        //hide the all of the element with class msg_body
+        $(".faq_answer").hide();
+        //toggle the componenet with class msg_body
+        $(".faq_question").click(function(){
+            $(this).next(".faq_answer").slideToggle("normal");
+        });
+    });
+</script>
+
+<li>
+    <div class="faq_question">
+       <a href="#url-blah" name="url-blah">Question</a>
+    </div>
+    <div class="faq_answer">
+      <p>Text to show</p>
+      </div>
+  </li>
